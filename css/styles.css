@@ -3,7 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color: #1F2937;
+    background-color: #194d33;
 }
 
 button {
@@ -12,22 +12,30 @@ button {
     border-radius: 8px;
     font-size: 16px;
     color: #F9FAF8;
-    background-color: #3882F6;
+    background-color: #010101;
 }
 
 .header {
     display: flex;
-    background-color: #1F2937;
+    background-color: #194d33;
     padding: 8px 80px;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-logo {
+    display: flex;
     color: #F9FAF8;
     font-weight: 700;
     font-size: 24px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
 }
+
+.logo {
+    width: 50px;
+    height: 50px;
+  }
 
 .header-links a {
     text-decoration: none;
@@ -50,8 +58,7 @@ ul {
     flex: 1;
 }
 
-.content1 {
-    background-color: #1F2937;
+.initial-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +66,7 @@ ul {
     gap: 32px;
 }
 
-.content1-right {
+.content-right {
     flex: 1;
 }
 
@@ -72,24 +79,23 @@ ul {
 .subtext {
     color: #E5E7EB;
     font-size: 18px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .sign-up {
     border: none;
 }
 
-.image1 {
-    background-color: #6D747D;
+.image-table {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
-    height: 200px;
 }
 
-.image1 div {
-    color: #E5E7EB;
+.image-table img {
+    width: auto;
+    height: 250px;
 }
 
 .content2 {
@@ -104,7 +110,7 @@ ul {
 .title2 {
     font-size: 30px;
     font-weight: 800;
-    color:#1F2937;
+    color:#010101;
     padding: 16px;
 }
 
@@ -118,7 +124,7 @@ ul {
 }
 
 .cuadro {
-    border: 3px #3882F6;
+    border: 3px #FF0000;
     border-style: solid;
     border-radius: 16px;
 }
@@ -135,14 +141,9 @@ ul {
     height: 120px;
 }
 
-.text2  {
-    
-}
-
-
 .content3 {
-    background-color: #E5E7EB;
-    color: #1F2937;
+    background-color: #648370;
+    color: #010101;
     padding: 80px;
     display: flex;
     flex-direction: column;
@@ -170,7 +171,7 @@ ul {
 
 .rectangulo {
     margin: 42px 120px;
-    background-color: #3882F6;
+    background-color: #800000;
     border-radius: 8px;
     padding: 32px;
     display: flex;
@@ -200,7 +201,6 @@ ul {
 }
 
 .footer {
-    background-color: #1F2937;
     color: #E5E7EB;
     display: flex;
     justify-content: center;
