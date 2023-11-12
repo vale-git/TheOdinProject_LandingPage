@@ -13,6 +13,8 @@ button {
     font-size: 16px;
     color: #F9FAF8;
     background-color: #010101;
+    width: 170px;
+    height: 40px;
 }
 
 .header {
@@ -27,8 +29,7 @@ button {
     display: flex;
     color: #F9FAF8;
     font-weight: 700;
-    font-size: 24px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
     align-items: center;
 }
 
@@ -46,7 +47,7 @@ button {
 ul {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -66,8 +67,11 @@ ul {
     gap: 32px;
 }
 
-.content-right {
+.content-left {
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .main-title {
@@ -86,20 +90,16 @@ ul {
     border: none;
 }
 
-.image-table {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.content-right {
+    align-self: stretch;
     flex: 1;
+    border-radius: 8px;
+    background: url(../images/Christmas-dinner.jpg);
+    background-size: cover;
 }
 
-.image-table img {
-    width: auto;
-    height: 250px;
-}
-
-.content2 {
-    background-color: white;
+.content {
+    background-color: #9ab6a8;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -107,39 +107,45 @@ ul {
     padding-bottom: 32px;
 }
 
-.title2 {
-    font-size: 30px;
+.subtitle {
+    font-size: 35px;
     font-weight: 800;
-    color:#010101;
-    padding: 16px;
+    color:#0b0c0b;
+    padding: 20px;
 }
 
-.cuadros {
+.boxes {
     display: flex;
-    align-items: center;
-
     gap: 32px;
-    flex: 1;
-    flex-wrap: wrap;
 }
 
-.cuadro {
-    border: 3px #FF0000;
+.box {
+    border: 3px #870202;
     border-style: solid;
     border-radius: 16px;
 }
 
 .image-space {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.image-space div, .cuadro {
-    width: 120px;
-    height: 120px;
+.box {
+    max-width: 140px;
+    max-height: 140px;
+    width: auto;
+    height: auto;
 }
+
+.text {
+    color: #0b0c0b;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 
 .content3 {
     background-color: #648370;
@@ -150,13 +156,13 @@ ul {
 }
 
 .quote {
-    font-size: 36px;
+    font-size: 20px;
     font-style: italic;
     margin: 0 40px;
 }
 
 .author {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     align-self: flex-end;
     padding: 8px;
